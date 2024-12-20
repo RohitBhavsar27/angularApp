@@ -1,0 +1,25 @@
+table,th,td{
+    border: 1px solid magenta;
+    border-collapse: collapse;
+}
+
+table{
+    margin: auto;
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    background-color: darkblue; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
