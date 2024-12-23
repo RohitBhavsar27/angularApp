@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { AdditionComponent } from './addition/addition.component';
 import { ArrayexComponent } from './arrayex/arrayex.component';
 import { MathsService } from './maths.service';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';import { RouterOutlet } from '@angular/router';
+``
 
 @Component({
     selector: 'app-root',
@@ -24,11 +24,6 @@ export class AppComponent {
 
     calculateCube(){
         this.answer = this.obj.calculateCube(this.no)
-    }
-
-    currentComponent: string = 'addition'; 
-    toggleComponent() { 
-        this.currentComponent = this.currentComponent === 'addition' ? 'arrayex' : 'addition'; 
     }
 }
 

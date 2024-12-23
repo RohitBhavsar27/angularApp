@@ -1,16 +1,11 @@
-<!-- Add FormsModule inside imports before using ngModel in a ts file
-<input type="number" name="no1" [(ngModel)]="no1" />
-<input type="number" name="no2" [(ngModel)]="no2" />
-<input name="ans" [(ngModel)]="ans" />
-
-data flow from html to ts and vice versa needs two way binding, use ngModel for that.
-data flow from ts to html needs one way binding, also known as property binding
-
-<button (click)="add()">Add</button>
-<button (click)="subtract()">Subtract</button>
-
-<img [src]="imgsrc" alt="Image description" height="100px" width="100px" /> -->
-<h1>This is addition Component</h1>
-
-<button (click)="changeColor()">Change to Blue</button>
-
+<body>
+    <div [style.background-color]="bodyColor">
+        <h1>This is addition component</h1>
+        <select name="bodyColor" [(ngModel)]="bodyColor" (change)="changeColor()">
+            <option>Choose Color</option>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+        </select>
+    </div>
+</body>

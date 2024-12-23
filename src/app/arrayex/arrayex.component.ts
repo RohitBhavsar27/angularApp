@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MathsService } from '../maths.service';
+import { ColorService } from '../color.service';
 
 @Component({
   selector: 'app-arrayex',
@@ -29,13 +30,11 @@ export class ArrayexComponent {
             return "red" 
     }
 
-    constructor(private colorService: MathsService){ 
-
+    bodyColor:string = ""
+    constructor(private colorService: ColorService){ 
+        this.bodyColor = this.colorService.colorForAll;
     }
 
-    changeColor(){
-        this.colorService.changeColor('green')
-    }
 }
 
 class Employee{

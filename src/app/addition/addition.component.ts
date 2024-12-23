@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MathsService } from '../maths.service';
+import { ColorService } from '../color.service';
 
 @Component({
     //Javascript-object
@@ -25,11 +25,12 @@ export class AdditionComponent {
         this.ans = this.no1 - this.no2;
     }
 
-    constructor(private colorService: MathsService){ 
-
+    bodyColor:string = ""
+    constructor(private colorService: ColorService){ 
+        this.bodyColor = this.colorService.colorForAll;
     }
 
     changeColor(){
-        this.colorService.changeColor('blue')
+        this.colorService.colorForAll = this.bodyColor
     }
 }

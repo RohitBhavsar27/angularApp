@@ -11,8 +11,4 @@ export class MathsService {
         return no*no*no
     }
 
-
-    changeColor(color:string){
-        document.body.style.backgroundColor = color
-    }
 }
