@@ -3,6 +3,7 @@ import { AdditionComponent } from './addition/addition.component';
 import { ArrayexComponent } from './arrayex/arrayex.component';
 import { LoginComponent } from './login/login.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ApiClientComponent } from './api-client/api-client.component';
 
 export const routes: Routes = [
     {
@@ -20,5 +21,9 @@ export const routes: Routes = [
     {
         path: 'welcome',
         component: WelcomeComponent
+    },
+    {
+        path: 'apiClient',
+        component: ApiClientComponent
     }
 ];

@@ -3,13 +3,13 @@ import { AdditionComponent } from './addition/addition.component';
 import { ArrayexComponent } from './arrayex/arrayex.component';
 import { MathsService } from './maths.service';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';import { RouterLink, RouterOutlet } from '@angular/router';
 ``
 
 @Component({
     selector: 'app-root',
     // imports: [AdditionComponent, ArrayexComponent],
-    imports: [FormsModule, AdditionComponent, ArrayexComponent, CommonModule, RouterOutlet],
+    imports: [FormsModule,CommonModule, RouterOutlet, RouterLink],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })
