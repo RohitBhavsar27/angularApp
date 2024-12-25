@@ -4,6 +4,7 @@ import { ArrayexComponent } from './arrayex/arrayex.component';
 import { LoginComponent } from './login/login.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ApiClientComponent } from './api-client/api-client.component';
+import { PipeexComponent } from './pipeex/pipeex.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +26,9 @@ export const routes: Routes = [
     {
         path: 'apiClient',
         component: ApiClientComponent
+    },
+    {
+        path: 'pipeex',
+        component: PipeexComponent
     }
 ];
